@@ -509,11 +509,10 @@ endif
 
 ifeq ($(CONFIG_WLAN_DEBUGFS), y)
        CONFIG_WLAN_MWS_INFO_DEBUGFS := y
-       CONFIG_WLAN_FEATURE_MIB_STATS := y
 else
        CONFIG_WLAN_MWS_INFO_DEBUGFS := n
-       CONFIG_WLAN_FEATURE_MIB_STATS := n
 endif
+CONFIG_WLAN_FEATURE_MIB_STATS := y
 
 # Feature flags which are not (currently) configurable via Kconfig
 
